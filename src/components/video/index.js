@@ -3,7 +3,7 @@ import source from '../../assets/video/sharks_2017.mp4';
 
 const Video = () => {
   return(
-    <video id="background-video" autoPlay loop muted>
+    <video id="background-video" autoPlay loop muted autoBuffer muted playsinline>
       <source src={source} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
