@@ -1,0 +1,21 @@
+@import './constants.scss';
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 2px -2px lightgrey;
+  background: $background-color;
+  position: sticky;
+  top: 0;
+  margin-bottom: 10px;
+  z-index: 1;
+
+  .title-container {
+    color: white;
+
+    margin-right: 40px;
+  }
+
+}
