@@ -13,7 +13,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, a {
  margin:0;
  padding:0;
  border:0;
@@ -22,6 +22,8 @@ time, mark, audio, video {
  vertical-align:baseline;
  background:transparent;
  line-height: none;
+ text-decoration: none;
+ color: inherit;
 
 }
 
@@ -32,23 +34,8 @@ button:focus {
   outline: none;
 }
 
-h1, p {
-  text-align: center;
-}
-
-h1 { 
-  font-size: 5vw;
-  margin: 10px;
-  color: $primary-color;
-  font-weight: bold;
-  font-family: $title-font;
-}
-
-h3 {
-  color: $shark-red;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: $title-font;
+html {
+  scroll-behavior: smooth;
 }
 
 .parent, #root, html, body {
@@ -58,12 +45,15 @@ h3 {
   font-size: 24px;
   color: black;
   background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .parent {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .inner-container {
@@ -74,5 +64,79 @@ h3 {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  margin: 20px 0;
+  height: 100%;
+  background: linear-gradient(270deg, #05FEF6, #05FEB3, #7EFED4, #7EB2FE);
+  background-size: 1200% 1200%;
+  -webkit-animation: Rainbow 20s ease infinite;
+  -moz-animation: Rainbow 20s ease infinite;
+  animation: Rainbow 20s ease infinite;
 }
+
+@-webkit-keyframes Rainbow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes Rainbow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes Rainbow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+h1, p {
+  text-align: center;
+}
+
+p {
+  margin: 10px;
+}
+
+.orange {
+  color: $shark-orange;
+}
+
+.blue {
+  color: $shark-blue;
+}
+
+h1 { 
+  font-size: 4.0vw;
+  margin: 10px;
+  color: $shark-red;
+  font-weight: bold;
+  font-family: $title-font;
+}
+
+h3 {
+  color: $shark-blue;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: $title-font;
+  margin: 10px;
+}
+
+i {
+  font-size: 30px;
+  color: $shark-orange;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+

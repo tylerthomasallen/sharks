@@ -5,9 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 2px -2px lightgrey;
-  background: $background-color;
-  position: sticky;
+  background: $shark-orange;
+  position: fixed;
   top: 0;
   margin-bottom: 10px;
   z-index: 1;

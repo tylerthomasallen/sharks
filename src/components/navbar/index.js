@@ -7,10 +7,9 @@ const NavBar = () => {
   return(
     <div className="navbar-container">
       <SidebarContainer />
-      {/* <Link to="/trending"> */}
-        {/* <Title text="Giphagram" /> */}
-      <h3>Monterey Sharks</h3>
-      {/* </Link> */}
+      <a href="#">
+        <h3>Monterey Sharks</h3>
+      </a>
     </div>
   )
 }

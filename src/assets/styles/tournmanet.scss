@@ -1,0 +1,15 @@
+@import './constants.scss';
+
+#tournament {
+
+  background: white;
+
+  a:hover {
+    color: $shark-red;
+  }
+  
+
+  p {
+    font-size: 3.0vw;
+  }
+}

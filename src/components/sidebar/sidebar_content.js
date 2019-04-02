@@ -11,24 +11,27 @@ const SidebarContent = ( { closeSidebar } ) => {
       <div className="sidebar-container">
   
         <div className="sidebar-title">
-          {/* <Title text="Giphagram" /> */}
-          <h3>Monterey Sharks</h3>
+          <a href="#" onClick={closeSidebar}>
+            <h3>Monterey Sharks</h3>
+          </a>
           <i className="fas fa-times" onClick={closeSidebar}></i>
         </div>
   
-          <a href="#" onClick={closeSidebar}>
-          <i className="fas fa-home" /> Home
-          </a>
-  
-        {/* <Link to={'/search'} onClick={closeSidebar}> */}
-          <i className="fas fa-search" />
-          Search
-        {/* </Link> */}
-        
-        {/* <Link to={'/favorites'} onClick={closeSidebar}> */}
-          <i className="fas fa-heart" />
-          Favs
-        {/* </Link> */}
+        <a href="#" onClick={closeSidebar}>
+          <i className="fas fa-home" />
+          <p>Home</p>
+        </a>
+
+        <a href="#video" onClick={closeSidebar}>
+         <i class="fas fa-video" />
+         <p>Video</p>
+        </a>
+
+        <a href="#tournament" onClick={closeSidebar}>
+          <i class="fas fa-mountain" />
+          <p>Tahoe Tournament</p>
+        </a>
+
 
       </div>
 
